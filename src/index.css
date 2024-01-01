@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*fonts*/
+@font-face {
+    font-family : "markazi";
+    src: font-url("Fonts/markazi.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'karla';
+    src: url("Fonts/Karla.ttf") format("truetype");
+}
+/*animation*/
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+@keyframes fullSpin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes reloadNav {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#headerT  {
+    animation: reloadNav 1s ease-out 0.10s;
+}
+#headerP {
+    animation: reloadNav 1s ease-out 0.20s;
+}
+#headerButton {
+    animation: reloadNav 1s ease-out 0.30s;
+}
+#anime{
+    animation: move 5s linear infinite;
+}
+#headerButton::before {
+    content: '';
+    position: absolute;
+    background: conic-gradient(#2a1e1e 20deg, transparent 120deg);
+    width: 378px;
+    height: 300px;
+    top: -108px;
+    left: -25%;
+    animation: fullSpin 3s linear infinite;
+}
+#headerButton::after {
+    content: 'Reserve a Table';
+    width: 96%;
+    height: 90%;
+    background-color: #F4CE14;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    align-items: center;
+    font-family: karla;
+}
+a:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 18px;
+    background-color: #F4CE14;
+    transition-duration: 0.9s;
+}
+#home:before {
+    content: "";
+    height: 2px;
+    width: 59px;
+    position: absolute;
+    bottom: 18px;
+    background-color: #F4CE14;
+    transition-duration: 0.9s;
+}
+#home:hover:before {
+    width: 59px;
+}
+#about:hover:before {
+    width: 60px;
+}
+#menu:hover:before {
+    width: 57px;
+}
+#reservation:hover:before {
+    width: 114px;
+}
+#order:hover:before {
+    width: 124px;
+}
+#login:hover:before {
+    width: 57px;
 }
