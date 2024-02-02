@@ -1,5 +1,5 @@
-import pizza2 from "../Images/pizza2.jpg";
-import anime from "../Images/anime.png";
+import pizza2 from "../Images/Header/pizza2.jpg";
+import anime from "../Images/About/anime.png";
 
 function Header() {
 
@@ -18,7 +18,7 @@ function Header() {
                     reimagined for today.</p>
                 <button id='headerButton' className="font-Karla w-[250px] h-[60px] bg-[#F4CE14] rounded-3xl relative top-30 font-semibold text-2xl top-36 left-[22px] shadow-lg shadow-black/50 z-30 overflow-hidden">Reserve a Table</button>
             </div>
-            <img src={pizza2} alt="pizza" className="ml-auto w-[1323px] absolute left-[357px] h-[719px]"/>
+            <img src={pizza2} alt="pizza" className="ml-auto w-[1323px] absolute left-[357px] h-[719px] "/>
         </header>
     );
 }

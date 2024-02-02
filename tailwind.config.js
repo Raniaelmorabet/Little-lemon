@@ -25,6 +25,9 @@ module.exports = {
       spacing: {
         '283': '283px',
       },
+      screens: {
+        'md': {'min': '1680px', 'max': '2919px'},
+      },
     },
   },
   plugins: [],

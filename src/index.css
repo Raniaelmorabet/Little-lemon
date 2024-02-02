@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /*fonts*/
 @font-face {
     font-family : "markazi";
@@ -11,12 +12,20 @@
     src: url("Fonts/Karla.ttf") format("truetype");
 }
 /*animation*/
-@keyframes move {
+@keyframes moveY {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(30px);
+    }
+}
+@keyframes moveX  {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
     }
 }
 @keyframes fullSpin {
@@ -42,10 +51,21 @@
 #headerButton {
     animation: reloadNav 1s ease-out 0.30s;
 }
-#anime{
-    animation: move 5s linear infinite;
+#homeButton {
+    animation: reloadNav 1s ease-out 0.30s;
 }
-#headerButton::before {
+#anime{
+    animation: moveY 5s linear infinite;
+}
+#anime1 {
+    animation: moveX 5s linear infinite;
+}
+#delivery:hover{
+    animation: moveX 2s linear infinite;
+}
+#headerButton::before,
+#homeButton::before,
+#menuButton::before{
     content: '';
     position: absolute;
     background: conic-gradient(#2a1e1e 20deg, transparent 120deg);
@@ -55,7 +75,21 @@
     left: -25%;
     animation: fullSpin 3s linear infinite;
 }
-#headerButton::after {
+#menuButton::after{
+    content: 'View All Menu';
+    width: 96%;
+    height: 90%;
+    background-color: #F4CE14;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    font-family: karla;
+}
+#headerButton::after{
     content: 'Reserve a Table';
     width: 96%;
     height: 90%;
@@ -70,6 +104,23 @@
     font-weight: bold;
     align-items: center;
     font-family: karla;
+}
+#homeButton::after{
+    content: 'Online Menu';
+    width: 96%;
+    height: 90%;
+    background-color: #F4CE14;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    align-items: center;
+    font-family: karla;
+
 }
 a:before {
     content: "";
@@ -98,7 +149,7 @@ a:before {
 #menu:hover:before {
     width: 57px;
 }
-#reservation:hover:before {
+#Testimonials:hover:before {
     width: 114px;
 }
 #order:hover:before {
@@ -106,4 +157,18 @@ a:before {
 }
 #login:hover:before {
     width: 57px;
+}
+#cardContainer{
+    box-shadow: 11px 11px 24px 0 rgba(0, 0, 0, 0.25)
+}
+#delivery {
+filter: invert(53%) sepia(90%) saturate(3158%) hue-rotate(16deg) brightness(95%) contrast(128%)
+}
+#container {
+    filter: drop-shadow(18px 18px 15px rgba(0, 0, 0, 0.25));
+}
+::placeholder {
+    font-family: Karla;
+    letter-spacing: 1px;
+    font-weight: lighter;
 }
