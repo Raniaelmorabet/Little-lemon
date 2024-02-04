@@ -19,18 +19,24 @@ function Footer() {
             <div id='mainContainer' className='flex bg-light-brown w-[100%] py-[60px] h-[500px]'>
                 <div>
                     <ul className='text-white space-y-6 my-16 mx-44 font-Karla text-xl'>
-                        <li className='hover:text-[#F4CE14]'><Link to="navBar" smooth={true} style={{ cursor: 'pointer' }}>Home</Link></li>
-                        <li className='hover:text-[#F4CE14]'><Link to="aboutSection" offset={-170} smooth={true} style={{ cursor: 'pointer' }}>About</Link></li>
-                        <li className='hover:text-[#F4CE14]'><Link to="menuContainer" offset={40} smooth={true} style={{ cursor: 'pointer' }}>Menus</Link></li>
-                        <li className='hover:text-[#F4CE14]'><Link to="TestimonialContainer" offset={-350} smooth={true} style={{ cursor: 'pointer' }} >Testimonials</Link></li>
-                        <li className='hover:text-[#F4CE14]'><Link to="navBar" smooth={true} style={{ cursor: 'pointer' }}>Order</Link></li>
-                        <li className='hover:text-[#F4CE14]'><Link to="navBar" smooth={true} style={{ cursor: 'pointer' }}>Login</Link></li>
+                        <li className='hover:text-[#F4CE14]'><Link to="navBar" smooth={true}
+                                                                   style={{cursor: 'pointer'}}>Home</Link></li>
+                        <li className='hover:text-[#F4CE14]'><Link to="aboutSection" offset={-170} smooth={true}
+                                                                   style={{cursor: 'pointer'}}>About</Link></li>
+                        <li className='hover:text-[#F4CE14]'><Link to="menuContainer" offset={40} smooth={true}
+                                                                   style={{cursor: 'pointer'}}>Menus</Link></li>
+                        <li className='hover:text-[#F4CE14]'><Link to="TestimonialContainer" offset={-350} smooth={true}
+                                                                   style={{cursor: 'pointer'}}>Testimonials</Link></li>
+                        <li className='hover:text-[#F4CE14]'><Link to="navBar" smooth={true}
+                                                                   style={{cursor: 'pointer'}}>Order</Link></li>
+                        <li className='hover:text-[#F4CE14]'><Link to="navBar" smooth={true}
+                                                                   style={{cursor: 'pointer'}}>Login</Link></li>
                     </ul>
                 </div>
                 <div id='box'
                      className='flex justify-center items-center mx-14 my-8 bg-dark-brown w-[40%] h-[350px] border-black border-[2px]'>
                     <div className='mb-[20px]'>
-                        <img src={logo}  alt="Logo" className='flex justify-center items-center mx-auto w-60 my-3'/>
+                        <img src={logo} alt="Logo" className='flex justify-center items-center mx-auto w-60 my-3'/>
                         <p className='text-[#888] font-Karla text-[16px] text-center'>
                             Restaurant St, Delicious City, Morocco 8500 <br></br>
                             booking@little.lemon.com <br></br>
@@ -60,12 +66,18 @@ function Footer() {
                 </div>
                 <div>
                     <ul className='text-white space-y-6 my-16 mx-44 font-Karla text-xl'>
-                        <li className='hover:text-[#F4CE14]'><a href='https://www.facebook.com' rel="noreferrer" target='_blank'>Facebook</a></li>
-                        <li className='hover:text-[#F4CE14]'><a href='https://www.instagram.com' rel="noreferrer" target='_blank'>Instagram</a></li>
-                        <li className='hover:text-[#F4CE14]'><a href='https://twitter.com/RANIAELMORABET7' rel="noreferrer" target='_blank'>Twitter</a></li>
-                        <li className='hover:text-[#F4CE14]'><a href='https://www.youtube.com' rel="noreferrer" target='_blank'>Youtube</a></li>
-                        <li className='hover:text-[#F4CE14]'><a href='https://www.linkedin.com/in/rania-elmorabet/' rel="noreferrer" target='_blank'>Linkedin</a></li>
-                        <li className='hover:text-[#F4CE14]'><a href='https://www.google.com' rel="noreferrer" target='_blank'>Google</a></li>
+                        <li className='hover:text-[#F4CE14]'><a href='https://www.facebook.com' rel="noreferrer"
+                                                                target='_blank'>Facebook</a></li>
+                        <li className='hover:text-[#F4CE14]'><a href='https://www.instagram.com' rel="noreferrer"
+                                                                target='_blank'>Instagram</a></li>
+                        <li className='hover:text-[#F4CE14]'><a href='https://twitter.com/RANIAELMORABET7'
+                                                                rel="noreferrer" target='_blank'>Twitter</a></li>
+                        <li className='hover:text-[#F4CE14]'><a href='https://www.youtube.com' rel="noreferrer"
+                                                                target='_blank'>Youtube</a></li>
+                        <li className='hover:text-[#F4CE14]'><a href='https://www.linkedin.com/in/rania-elmorabet/'
+                                                                rel="noreferrer" target='_blank'>Linkedin</a></li>
+                        <li className='hover:text-[#F4CE14]'><a href='https://www.google.com' rel="noreferrer"
+                                                                target='_blank'>Google</a></li>
                     </ul>
                 </div>
             </div>
