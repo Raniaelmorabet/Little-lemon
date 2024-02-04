@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="flex bg-dark-brown">
             <div className="w-25 h-719 bg-light-brown rounded-br-[50px] z-10">
-                <img src={anime} id='anime' className= "absolute w-25 h-[689px] opacity-70 "/>
+                <img src={anime}  alt="anime" id='anime' className= "absolute w-25 h-[689px] opacity-70 "/>
                 <h2 id='headerT' className="font-custom text-[#F4CE14] font-bold text-5xl relative left-[22px] top-16">Little Lemon <br></br> Morocco</h2>
                 <p  id='headerP' className="font-Karla text-zinc-300 leading-loose relative left-[22px] flex col-auto top-24">
                     Discover the best of Mediterranean cuisine <br></br> with a modern twist at our

@@ -1,18 +1,34 @@
 import salad from "../Images/About/salad.png";
 import anime from "../Images/About/anime.png";
+import React, { useState, useEffect } from 'react';
 
 function About() {
+    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1678);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsWideScreen(window.innerWidth > 1700);
+        };
+
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div id='aboutSection' className='bg-light-brown mb-[120px] overflow-hidden block'>
-            <img src={anime} id='anime' className="absolute w-43 h-[570px] opacity-80 "/>
+            <img src={anime}  alt="anime" id='anime' className="absolute w-43 h-[570px] opacity-80 "/>
             <section className='font-custom text-[#F4CE14] font-bold text-6xl  pt-20 z-30 relative '>
-                <h2 className="bg-black/20 pl-[22px] py-[5px] ">
+                <h2 id='aboutHeader' className="bg-black/20 pl-[22px] py-[5px] ">
                     Little Lemon <br></br>
                     Morocco
                 </h2>
             </section>
             <section className='font-Karla text-white leading-loose w-[700px] ml-[22px] pt-12 pb-16 text-[20px] z-30 relative '>
-                <p>
+                <p id='aboutPara'>
                     Little Lemon, a culinary gem that first graced the Moroccan food scene in 1995,
                     was born from the shared vision of two enterprising Italian brothers, Adrian and Mario.
                     In the midst of the vibrant cultural tapestry that defines Morocco,
@@ -22,7 +38,9 @@ function About() {
                     of Morocco.
                 </p>
             </section>
-            <img src={salad} className='absolute w-[750px] top-[1620px] z-40 left-[900px] object-fit '/>
+            {isWideScreen && (
+                <img id='salad' alt="salad"  src={salad} className='absolute w-[750px] top-[1620px] z-40 left-[900px] object-fit '/>
+            )}
         </div>
     );
 }

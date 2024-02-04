@@ -38,7 +38,7 @@ function strength() {
         {strengthContainer.map((strengthData) => (
         <div id='container' className='bg-[#EDEFEE] w-[400px] h-[280px] my-[90px] mx-8 border-gray-500 border-[0.5px] font-custom'>
             <div key={strengthData.id}>
-                <img src={strengthData.image} className='w-32 flex justify-center items-center mx-auto my-5'/>
+                <img alt='strength' src={strengthData.image} className='w-32 flex justify-center items-center mx-auto my-5'/>
                 <h2 className='text-center my-3 text-2xl font-[550] tracking-wide'>{strengthData.name}</h2>
                 <p className='my-3 text-[18px] text-[#495E57] text-center'>{strengthData.description}</p>
             </div>

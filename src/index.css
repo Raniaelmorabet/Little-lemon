@@ -41,6 +41,22 @@
         transform: translateX(0);
     }
 }
+@keyframes reloadNavX {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes reloadNavY {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 #headerT  {
     animation: reloadNav 1s ease-out 0.10s;
@@ -52,6 +68,18 @@
     animation: reloadNav 1s ease-out 0.30s;
 }
 #homeButton {
+    animation: reloadNavX 1s ease-out 0.30s;
+}
+#week {
+    animation: reloadNav 1s ease-out 0.30s;
+}
+#salad {
+    animation: reloadNavX 1s ease-out 0.30s;
+}
+#aboutHeader {
+    animation: reloadNav 1s ease-out 0.30s;
+}
+#aboutPara {
     animation: reloadNav 1s ease-out 0.30s;
 }
 #anime{
@@ -171,4 +199,10 @@ filter: invert(53%) sepia(90%) saturate(3158%) hue-rotate(16deg) brightness(95%)
     font-family: Karla;
     letter-spacing: 1px;
     font-weight: lighter;
+}
+#cardContainer1{
+    animation: reloadNav 1s ease-out 0.30s;
+}
+#cardContainer4{
+    animation: reloadNavX 1s ease-out 0.30s;
 }

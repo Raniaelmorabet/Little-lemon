@@ -19,7 +19,6 @@ function OpeningHours() {
     );
 }
 function Menu() {
-    {/* Menu column 1 */}
     const menuDataCol1 =[
          {
              id: 1,
@@ -42,31 +41,30 @@ function Menu() {
              price: '$55.50',
              description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
          }
-        ]
-    {/* Menu column 2 */}
-    const menuDataCol2 =[
+            ]
+        const menuDataCol2 =[
         {
-            id: 1,
-            image: menu1,
-            name: 'Greek salad',
-            price: '$40.50',
-            description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
+        id: 1,
+        image: menu1,
+        name: 'Greek salad',
+        price: '$40.50',
+        description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
         },
         {
-            id: 2,
-            image: menu2,
-            name: 'Greek salad',
-            price: '$35.50',
-            description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
+        id: 2,
+        image: menu2,
+        name: 'Greek salad',
+        price: '$35.50',
+        description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
         },
         {
-            id: 3,
-            image: menu3,
-            name: 'Greek salad',
-            price: '$50.50',
-            description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
+        id: 3,
+        image: menu3,
+        name: 'Greek salad',
+        price: '$50.50',
+        description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.',
         }
-    ]
+            ]
 
 
     return (
@@ -78,7 +76,7 @@ function Menu() {
                 <section className='flex flex-row gap-40 flex-wrap'>
                     {/* Menu column 1 */}
                     <section>
-                        <img id='anime1' src={anime} className='absolute opacity-50 h-[865px] w-[1300px]'/>
+                        <img id='anime1' alt="anime1"  src={anime} className='absolute opacity-50 h-[865px] w-[1300px]'/>
                         {menuDataCol1.map((menuData) => (
                             <div key={menuData.id}
                                  className='flex flex-row space-y-20 flex-wrap ml-14 pb-3 z-30 relative'>

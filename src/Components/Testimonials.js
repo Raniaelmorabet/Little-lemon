@@ -66,16 +66,16 @@ function Testimonials() {
                         <div key={testimonial.id}>
                             <div className='w-[430px] h-[270px] bg-[#EDEFEE] mb-[60px] border-black border-[0.5px]'>
                                 <div className='flex flex-row py-4 px-4'>
-                                    <img src={testimonial.avatar} className='rounded-[50%] w-[100px] h-[100px] border-black border-[0.5px]' />
+                                    <img alt='avatar' src={testimonial.avatar} className='rounded-[50%] w-[100px] h-[100px] border-black border-[0.5px]' />
                                     <div className='flex flex-col flex-wrap font-custom font-semibold text-3xl mt-4 ml-5'>
                                         <h1>{testimonial.name}</h1>
                                         <div className='flex flex-row pt-2 gap-1'>
                                             {testimonial.stars.map((star, index) => (
-                                                <img key={index} src={star} className='w-14' />
+                                                <img alt='star' key={index} src={star} className='w-14' />
                                             ))}
                                         </div>
                                     </div>
-                                    <img src={testimonial.shine} className='w-[60px] ml-20' />
+                                    <img alt='shine' src={testimonial.shine} className='w-[60px] ml-20' />
                                 </div>
                                 <div className='ml-[22px] text-[#495E57]'>
                                     <p>{testimonial.paragraph}</p>
