@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -7,19 +8,25 @@ import Testimonials from "./Components/Testimonials";
 import Menu from "./Components/Menu";
 import Strength from "./Components/Strength";
 import Footer from "./Components/Footer";
+import Booking from "./Components/Booking";
 
 function App() {
     return (
-        <div>
-            <NavBar />
-            <Header />
-            <Home/>
-            <About />
-            <Testimonials />
-            <Menu />
-            <Strength />
-            <Footer />
-        </div>
+        <Router>
+            <div>
+                <NavBar />
+                <Header/>
+                <Home/>
+                <About/>
+                <Testimonials/>
+                <Menu/>
+                <Strength/>
+                <Routes>
+                    <Route path="/Booking" element={<Booking />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
     );
 }
 

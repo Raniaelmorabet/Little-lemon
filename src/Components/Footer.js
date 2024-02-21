@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../Images/Footer/logo.png'
+import logo1 from "../Images/navBar/logo1.png";
 import email from '../Images/Footer/email.svg'
 import { Link } from 'react-scroll';
 function Footer() {
@@ -36,7 +36,7 @@ function Footer() {
                 <div id='box'
                      className='flex justify-center items-center mx-14 my-8 bg-dark-brown w-[40%] h-[350px] border-black border-[2px]'>
                     <div className='mb-[20px]'>
-                        <img src={logo} alt="Logo" className='flex justify-center items-center mx-auto w-60 my-3'/>
+                        <img src={logo1} alt="Logo" className='flex justify-center items-center mx-auto w-60 my-3'/>
                         <p className='text-[#888] font-Karla text-[16px] text-center'>
                             Restaurant St, Delicious City, Morocco 8500 <br></br>
                             booking@little.lemon.com <br></br>

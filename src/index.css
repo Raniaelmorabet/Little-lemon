@@ -103,6 +103,29 @@
     left: -25%;
     animation: fullSpin 3s linear infinite;
 }
+#btn-booking::before {
+    content: '';
+    position: absolute;
+    background: conic-gradient(#2a1e1e 80deg, transparent 120deg);
+    width: 856px;
+    height: 60px;
+    left: -5%;
+    animation: fullSpin 5s linear infinite;
+}
+
+#btn-booking::after {
+    content: 'Reserve A Table';
+    width: 99%;
+    height: 90%;
+    background-color: #F4CE14;
+    position: absolute;
+    top: 5%;
+    left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: karla;
+}
 #menuButton::after{
     content: 'View All Menu';
     width: 96%;
@@ -205,4 +228,27 @@ filter: invert(53%) sepia(90%) saturate(3158%) hue-rotate(16deg) brightness(95%)
 }
 #cardContainer4{
     animation: reloadNavX 1s ease-out 0.30s;
+}
+#input ::placeholder {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: lighter;
+}
+#input-time,
+#input-date,
+#input-person{
+    padding-left: 14px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: lighter;
+    padding-right: 10px;
+}
+#input-message::placeholder {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: lighter;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(1) opacity(0.7);;
 }
