@@ -27,7 +27,7 @@ const NavBar = () => {
             {/* navbar Mobile*/}
             {/* navbar Links */}
             <ul className="flex flex-wrap flex-row justify-evenly space-x-16 mr-44 font-custom items-center ml-auto text-2xl">
-                <li><Routes id='home' to="Home" smooth={true} className="text-[#F4CE14]" href="#">Home</Routes></li>
+                <li><Routes id='home' to="/" smooth={true} className="text-[#F4CE14]">Home</Routes></li>
                 <li><Link id='about' to="aboutSection" offset={-170} smooth={true} className=" text-white hover:text-[#F4CE14]" href="#">About</Link></li>
                 <li><Link id='menu' to="menuContainer" offset={40} smooth={true} className=" text-white hover:text-[#F4CE14]" href="#">Menu</Link></li>
                 <li><Link id="Testimonials" to="TestimonialContainer" offset={-350} smooth={true} className=" text-white hover:text-[#F4CE14]" href="#">Testimonials</Link></li>
